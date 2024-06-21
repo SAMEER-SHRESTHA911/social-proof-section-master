@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root{
+    --ff-sp : "League Spartan", sans-serif;
+    --ff-primary-dark: hsl(300, 43%, 22%);
+    --ff-primary-light: hsl(333, 80%, 67%);
+
+    --ff-neutral-dark: hsl(303, 10%, 53%);
+    --ff-neutral-light: hsl(300, 24%, 96%);
+    --ff-white: hsl(0, 0%, 100%);  
+
+    --ff-heavy : 700;
+    --ff-neutral : 500;
+    --ff-light : 400;
+}
+*, 
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+    background: url(/images/bg-pattern-top-mobile.svg) top left , url(/images/bg-pattern-bottom-mobile.svg) bottom right;
+    background-repeat: no-repeat;
+
+}
+html{
+    font-family: var(--ff-sp);
+}
+header{
+    text-align: center;
+    color: var(--ff-neutral-dark)
+}
+header > h1{
+    color: var(--ff-primary-dark);
+    font-size: 2.5rem;
+    padding: 2rem;
+    padding-bottom: 0;
+    font-weight: var(--ff-heavy);
+}
+header > p{
+    padding: 0 2rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.first_row, .second_row,.third_row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background-color: var(--ff-neutral-light);
+    padding: 15px 10px 0 10px;
+    padding-top: 15px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.first_row, .second_row, .third_row > p{
+    color: var(--ff-primary-dark);
+    font-weight: var(--ff-heavy);
+    font-size: 1.25rem;
+}
+.person_title > img{
+    border-radius: 50%;
+    height: 60px;
+    padding: 10px;
+}
+.person_title{
+    gap: 25px;
+    display:flex;
+}
+.person_title > h1{
+    color: var(--ff-white);
+}
+.person_intro{
+    color: var(--ff-primary-light);
+    font-weight: var(--ff-light);
+    margin-top: 10px;
+}
+.desc{
+    background-color: var(--ff-primary-dark);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px;
+}
+.desc > p{
+    color : var(--ff-white);
+    line-height: 1.5rem;
+}
+#stars > img{
+    margin-right: 0.5rem;
+}
+.first_half{
+    margin-bottom: 50px;
+}
+header{
+    margin-bottom: 40px;
+}
+@media only screen and (min-width: 600px) {
+    .first_half{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    body{
+        margin: 15px 120px 40px 120px;
+    }
+    header{
+        width: 40%;
+        text-align: left;
+        line-height: 1.7rem;
+        margin-right: 100px;
+        margin-bottom: 0;
+    }
+    header > h1{
+        width: 70%;
+        line-height: 2.25rem;
+        letter-spacing: -1px;
+        font-size: 3rem;
+    }
+    .row{
+        width: 500px;   
+    }
+    .first_half{
+        display: flex;
+        align-items: center;
+    }
+    .first_row,.second_row,.third_row{
+        flex-direction: row;
+        align-items: center;
+        padding:0;
+        padding-left: 30px;
+        justify-content: flex-start;
+    }
+    .star{
+        margin-top: 70px;
+    }
+    #stars{
+        margin-right: 30px;
+    }
+    .second_row{
+        margin-left: 70px;
+    }
+    .third_row{
+        margin-left: 120px;
+    }
+    .second_half{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .desc{
+        width: 25vw;
+        margin-left: 30px;
+        padding: 25px;
+    }
+    .second_desc{
+        margin-top: 40px;
+    }
+    .third_desc{
+        margin-top:60px;
+    }
+    .person_title{
+        display:flex;
+        align-items: center;
+    }
+    body{
+        background: url(/images/bg-pattern-top-desktop.svg) top left, url(/images/bg-pattern-bottom-desktop.svg) bottom right;
+        background-repeat: no-repeat;
+    }
+  }@media only screen and (max-width: 768px) {
+    body {
+      background-color: blue;
+    }
+  }
